@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Copyright>Heather Floyd [www.HeatherFloyd.com]</Copyright>
+    <RepositoryType>GIT</RepositoryType>
+    <Authors>Heather Floyd</Authors>
+    <Company></Company>
+    <Product>Dragonfly</Product>
+    <Description>A framework for Umbraco 7 Websites - Core Binaries only (install into Web project)</Description>
+    <PackageLicenseUrl>https://github.com/hfloyd/Dragonfly.Framework/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/hfloyd/Dragonfly.Framework</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/hfloyd/Dragonfly.Framework</RepositoryUrl>
+    <PackageId>Dragonfly.Framework.Core</PackageId>
+    <AssemblyName>Dragonfly.Framework</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+
+  <Import Project="..\Custom.targets" />
+</Project>
