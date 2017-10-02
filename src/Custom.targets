@@ -6,5 +6,12 @@
     <!--Push to -source https://www.nuget.org-->
     <Exec Command="nuget.exe push &quot;$(ProjectDir)bin\$(ConfigurationName)\$(PackageId).$(PackageVersion).nupkg&quot; -source https://www.nuget.org" />
   </Target>
+  
+  <Target Name="PushNugetPackageLocal" AfterTargets="Pack" Condition="'$(Configuration)' == 'Debug'">
+
+    <!--Push to http://localnuget.local-->
+    <Exec Command="nuget.exe push &quot;$(ProjectDir)bin\$(ConfigurationName)\$(PackageId).$(PackageVersion).nupkg&quot; -source http://localnuget.local" />
+
+  </Target>
 
 </Project>

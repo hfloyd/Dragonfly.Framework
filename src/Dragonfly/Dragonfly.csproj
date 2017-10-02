@@ -13,7 +13,8 @@
     <PackageProjectUrl>https://github.com/hfloyd/Dragonfly.Framework</PackageProjectUrl>
     <RepositoryUrl>https://github.com/hfloyd/Dragonfly.Framework</RepositoryUrl>
     <PackageId>Dragonfly.Framework.Core</PackageId>
-    <AssemblyName>Dragonfly.Framework</AssemblyName>
+    <AssemblyName>Dragonfly.Framework.Core</AssemblyName>
+    <Version>1.0.1</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Dragonfly.Net" Version="1.0.0" />
