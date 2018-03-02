@@ -5,7 +5,7 @@
 # Project-specific files/folders
 build/
 *lnk
-
+src/FrameworkFiles
 
 # Umbraco files
 
