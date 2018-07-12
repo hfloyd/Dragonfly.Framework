@@ -6,6 +6,7 @@
     using DevTrends.MvcDonutCaching;
     using Umbraco.Core.Logging;
     using Umbraco.Core.Models;
+    using Umbraco.Web;
     using Umbraco.Web.Models;
     using Umbraco.Web.Mvc;
 
@@ -74,7 +75,9 @@
             }
 
             //Log the exception.
-            LogHelper.Error<DragonflySurfaceController>("Dragonfly Framework Error: ", filterContext.Exception);
+            var msg =
+                $"DragonflySurfaceController Error on page '{this.CurrentPage.Name}' [{this.CurrentPage.Id}] {this.CurrentPage.UrlAbsolute()}";
+            LogHelper.Error<DragonflySurfaceController>(msg, filterContext.Exception);
 
             //Clear the MvcDonutCache if an error occurs.
             var cacheManager = new OutputCacheManager();
