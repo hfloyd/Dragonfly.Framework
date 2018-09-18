@@ -14,12 +14,12 @@
     <RepositoryUrl>https://github.com/hfloyd/Dragonfly.Framework</RepositoryUrl>
     <PackageId>Dragonfly.Framework.Core</PackageId>
     <AssemblyName>Dragonfly.Framework.Core</AssemblyName>
-    <Version>1.0.6</Version>
-    <AssemblyVersion>1.0.6.0</AssemblyVersion>
+    <Version>1.0.7</Version>
+    <AssemblyVersion>1.0.7.0</AssemblyVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Dragonfly.Net" Version="1.8.0" />
-    <PackageReference Include="Dragonfly.Umbraco7" Version="1.5.5" />
+    <PackageReference Include="Dragonfly.Net" Version="1.10.1" />
+    <PackageReference Include="Dragonfly.Umbraco7" Version="1.5.9" />
     <PackageReference Include="Dragonfly.UmbracoGrid.Core" Version="1.0.1" />
     <PackageReference Include="MvcDonutCaching" Version="1.3.0" />
     <PackageReference Include="UmbracoCms.Core" Version="7.7.1" />
